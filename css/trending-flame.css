@@ -13,7 +13,7 @@
 }
 
 .right-triangle::after {
-    background-image: url("/ExploreSite/images/icons/flame.svg");
+    background-image: url("/images/icons/flame.svg");
     content: "";
     background-repeat: no-repeat;
     background-position: center;

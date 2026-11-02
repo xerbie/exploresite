@@ -4,11 +4,11 @@
 
 @font-face {
     font-family: "Moon Flower Bold";
-    src: url("/ExploreSite/fonts/Moon Flower Bold.woff2") format("woff2");
+    src: url("/fonts/Moon Flower Bold.woff2") format("woff2");
 }
 @font-face {
     font-family: "Assistant-Light";
-    src: url("/ExploreSite/fonts/Assistant-Light.ttf") format("truetype");
+    src: url("/fonts/Assistant-Light.ttf") format("truetype");
 }
 /* variables for accent colors */
 :root {
@@ -20,7 +20,7 @@
 }
 
 body {
-    background-image: url(/ExploreSite/images/background.jpg);
+    background-image: url(/images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
