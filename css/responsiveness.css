@@ -1,0 +1,10 @@
+
+@media (max-width: 48rem) {
+  .page-layout {
+    flex-direction: column;
+  }
+
+  .multi-column-text {
+    columns: 1;
+  }
+}

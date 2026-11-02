@@ -1,0 +1,44 @@
+/* trending triangle and flame */
+.right-triangle {
+    position: absolute;
+    width: 0;
+	border-left: 70px solid transparent;
+    right: 0;
+}
+.red {
+	border-top: 70px solid var(--red-accent);
+}
+.orange {
+    border-top: 70px solid var(--orange-accent);
+}
+
+.right-triangle::after {
+    background-image: url("/ExploreSite/images/icons/flame.svg");
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    min-height: 24px;
+    position: absolute;
+    top: -47px;
+    left: -23px;
+}
+
+.flame {
+    position: absolute;
+    right: 5px;
+    width: 1em;
+    top: .2em;
+}
+
+
+@media (max-width: 996px) {
+    .right-triangle {
+            display: flex;
+            flex-direction: column;
+        }
+    
+}
+

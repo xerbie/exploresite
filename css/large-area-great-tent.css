@@ -1,0 +1,106 @@
+/* NOT SO FAST! */
+.large-text-area {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    background-color: var(--white-opacity-accent);
+    max-width: 80em;
+    border-left: .5em solid var(--red-accent);
+    box-sizing: border-box;
+
+    img {
+        width: 17.5rem;
+        padding: 2em;
+    }
+    h2 {
+        font-size: 4rem;
+        margin-top: .5em;
+        color: #fb0172;
+    }
+    h3 {
+        font-size: 2rem;
+        color: white;
+    }
+    p {
+        margin-top: 0.5em;
+        column-count: 2;
+        margin-right: 3em;
+        text-align: left;
+    }
+}
+
+
+/* Great Tent Area */
+.great-tent {
+    position: relative;
+    box-sizing: border-box;
+    width: 80rem;
+    overflow: hidden; /* this is crop the image so it stays inside the section */
+
+    img {
+        border-left: .5em solid var(--blue-accent); /* thank you yaya */
+        max-width: 80em;
+    }
+    h1 {
+        position: absolute;
+        margin: .5em;
+        font-size: 4rem;
+        color: var(--blue-accent);
+    }
+    h3 {
+        color: white;
+        letter-spacing: .0375em;
+        font-size: 2rem;
+    }
+    p {
+        text-align: center;
+        font-style: italic;
+    }
+}
+.great-tent-header-and-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    position: absolute;
+    margin: 1em;
+    right: 0;
+    top: 32.5em;
+    width: 25rem;
+}
+
+
+@media (max-width: 1475px) {
+    .large-text-area {
+        position: relative;
+        max-width: 100%;
+        p {
+            column-count: 1;
+        }
+    }
+}
+
+@media (max-width: 996px) {
+    .large-text-area {
+        flex-direction: column;
+
+        text-align: center;
+        large-img img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    } 
+}
+
+@media (max-width: 420px) {
+    .great-tent-header-and-text {
+        position: absolute;
+        width: 15em;
+    }
+}
+
+
+
